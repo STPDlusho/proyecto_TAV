@@ -1,0 +1,36 @@
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center ion-padding">
+    <ion-text class="titulo_principal">RegistrAPP</ion-text>
+    <div class="ion-text-center">
+      <ion-text class="titulo_secundario">Restaurar contraseña</ion-text>
+    </div>
+    <p></p>
+  </div>
+
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nueva contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="npass"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Confirme nueva contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="ncpass"></ion-input>
+  </ion-item>
+
+  <ion-content>
+    <div class="ion-text-center ion-align-items-center">
+      <ion-button class="btn_restaurar" (click)="restaurar()">Actualizar contraseña</ion-button>
+    </div>
+    
+    <div class="div_volver">
+      <a class="link_volver" (click)="iraInicio()">Volver al inicio</a>
+    </div>
+  </ion-content>
+
+</ion-content>

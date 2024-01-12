@@ -1,0 +1,27 @@
+<ion-content>
+
+    <ion-button expand="full" (click)="startScan()">
+        <ion-icon slot="start" name="qr"></ion-icon>
+        Iniciar Escaneo
+    </ion-button>
+    
+    <ion-button expand="full" (click)="reset()" color="warning" *ngIf="scanResult">
+        <ion-icon slot="start" name="refresh"></ion-icon>
+        Reiniciar Escaneo
+    </ion-button>
+
+    <video #video [hidden]="!scanActive" width="100%"></video>
+    <canvas #canvas hidden></canvas>
+
+    <ion-button expand="full" (click)="stopScan()" color="danger" *ngIf="scanActive">
+        <ion-icon slot="start" name="close"></ion-icon>
+        Detener escaneo
+    </ion-button>
+
+    <ion-card *ngIf="scanResult">
+        <ion-card-header>
+            <ion-card-title>Se a escaneado correctamente</ion-card-title>
+        </ion-card-header>
+    </ion-card>
+    
+</ion-content>

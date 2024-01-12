@@ -1,0 +1,42 @@
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center ion-padding">
+    <ion-text class="titulo_principal">RegistrAPP</ion-text>
+    <div class="ion-text-center">
+      <ion-text class="titulo_secundario">Clase registrada</ion-text>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-content class="ion-padding ion-text-center">
+
+  <div *ngIf="loggedInUser" class="ion-text-start">
+    <ion-text class="usuario">Hola, {{ loggedInUser.name }} {{ loggedInUser.lname }}</ion-text>
+    <div>
+      <ion-text class="rut_usuario">Rut: {{ loggedInUser.rut }}</ion-text>
+    </div>
+  </div>
+
+  <div class="ion-text-start">
+    <div>
+      <ion-text class="usuario">Profesor: {{ qrData.profesor }}</ion-text>
+    </div>
+    <div>
+      <ion-text class="usuario">Hora de Clase: {{ qrData.horaClase }}</ion-text>
+    </div>
+    <ion-text class="usuario">Sala: {{ qrData.sala }}</ion-text>
+    <div>
+      <ion-text class="usuario">Dia: {{ qrData.dia }}</ion-text>
+    </div>
+  </div>
+
+
+
+</ion-content>
+
+<ion-content>
+  <div class="div_volver">
+    <a class="link_volver" (click)="iraInicio()">Volver al inicio</a>
+  </div>
+</ion-content>

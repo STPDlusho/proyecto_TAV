@@ -1,0 +1,56 @@
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center ion-padding">
+    <ion-text class="titulo_principal">RegistrAPP</ion-text>
+    <div class="ion-text-center">
+      <ion-text class="titulo_secundario">Registrarse</ion-text>
+    </div>
+    <p></p>
+  </div>
+  
+  <ion-item>
+    <ion-label position="floating">Rut</ion-label>
+    <ion-input type="text" [(ngModel)]="rut"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Apellido</ion-label>
+    <ion-input type="text" [(ngModel)]="lname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Carrera</ion-label>
+    <ion-input type="text" [(ngModel)]="car"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Confirme la contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+  </ion-item>
+
+  <ion-content>
+    <div class="ion-text-center ion-align-items-center">
+      <ion-button class="btn_registro" (click)="registrarse()">Registrarse</ion-button>
+    </div>
+    
+    <div class="div_volver">
+      <a class="link_volver" (click)="iraInicio()">Volver al inicio</a>
+    </div>
+  </ion-content>
+
+</ion-content>
